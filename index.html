@@ -251,6 +251,21 @@
     .fit-col{ flex:1; }
   }
 
+  .press-strip{
+    background:var(--surface); border-top:1px solid var(--pink-line); border-bottom:1px solid var(--pink-line);
+    padding:16px 20px; text-align:center;
+  }
+  .press-strip-link{
+    display:inline-flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap;
+    text-decoration:none; font-size:11px; color:var(--ink); letter-spacing:0.02em;
+    max-width:600px; transition:opacity 0.2s ease;
+  }
+  .press-strip-link:hover{ opacity:0.75; }
+  .press-badge{
+    background:var(--ink); color:var(--surface); font-size:10px; font-weight:600;
+    letter-spacing:0.04em; padding:5px 11px; border-radius:100px; flex-shrink:0;
+  }
+
   .final{ text-align:center; padding:110px 0 90px; }
   .final h2{ font-family:'Fraunces', serif; font-weight:500; font-size:clamp(30px, 7vw, 50px); margin-bottom:28px; }
 
@@ -457,6 +472,13 @@
     </details>
   </div>
 </section>
+
+<div class="press-strip">
+  <a href="https://apnews.com/press-release/ein-presswire-newsmatics/press-release-9556714acaff8c4a00a9cdd0b7e58aaa" class="press-strip-link mono">
+    <span class="press-badge">AP</span>
+    Featured by the Associated Press and 650+ media outlets nationwide
+  </a>
+</div>
 
 <div class="final wrap reveal">
   <h2 class="serif">She already knows.<br>Now it's time you did too.</h2>
